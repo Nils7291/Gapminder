@@ -132,6 +132,7 @@ name = "gapminder"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "numpy" },
     { name = "pandas" },
     { name = "plotly", extra = ["express"] },
     { name = "streamlit" },
@@ -139,6 +140,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "numpy", specifier = ">=2.2.5" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "plotly", extras = ["express"], specifier = ">=6.0.1" },
     { name = "streamlit", specifier = ">=1.45.0" },
